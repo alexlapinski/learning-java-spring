@@ -49,6 +49,6 @@ docker {
 
 dockerRun {
     name "springboot-example"
-    image "${project.group}/${bootJar.baseName}"
+    image "${project.group}/${bootJar.baseName}:${bootJar.version}"
     ports "8080:8080"
 }
